@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2F4F4F;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #FFDEAD;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    align-items: center; 
+}
+
+.navbar a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar button {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: black;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p, li {
+    font-size: 18px;
+}
+
+.textMain {
+    color: black;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #FFFACD;
+}
+
+.about-container img {
+    width: 200px;
+    border-radius: 10%;
+}
+
+.giff, .krd, .wrds {
+    border-radius: 20%;
+}
+
+.giff {
+    width: 300px;
+    height: 250px;
+}
+
+.krd {
+    width: 310px;
+    height: 350px;
+}
+
+.wrds {
+    width: 400px;
+    height: 450px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #0066cc;
+    padding-left: 10px;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tg {
+    width: 295px;
+    height: 640px;
+}
+
+.contact-form {
+    width: 80%; /* Контейнер формы будет занимать 80% от ширины родительского элемента */
+    max-width: 600px; /* Ограничим максимальную ширину */
+    margin: 0 auto; /* Центрируем форму по горизонтали */
+}
+
+/* Форма */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #004999;
+}
+
+/* Тёмная тема */
+.dark-theme {
+    background-color:  #000000;
+    color: #e0e0e0;
+}
+
+.dark-theme header {
+    background: #1f1f1f;
+}
+
+.dark-theme section {
+    background: #1f1f1f;
+}
+
+.dark-theme footer {
+    background: #1f1f1f;
+}
+
+.dark-theme a {
+    color: #90caf9;
+}
+
+.dark-theme .about-container {
+    background: #2c2c2c;
+}
+
+.dark-theme blockquote {
+    border-left: 4px solid #90caf9;
+}
+
+.dark-theme button {
+    background-color: #333;
+    color: white;
+}
+
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme .textMain,
+.dark-theme nav a,
+.dark-theme blockquote {
+    color: white;
+}
+
+body, header, section, footer, h1, h2, p, li, a, blockquote {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-icon {
+    transition: transform 0.3s;
+}
+
+.theme-toggle:hover #theme-icon {
+    transform: scale(1.3);
+}
+
+
+/* Стили для кнопки */
+.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Скрыта по умолчанию */
+    z-index: 1000; /* Чтобы кнопка была поверх контента */
+}
+
+/* Изменение цвета кнопки при наведении */
+.back-to-top-button:hover {
+    background-color: #004999;
+}

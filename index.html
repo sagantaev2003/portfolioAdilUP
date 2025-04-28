@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Адиля</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <button id="back-to-top" class="back-to-top-button">⬆️ Назад к верхней части</button>
+
+    <header>
+        <nav class="navbar">
+            <a href="#about">Обо мне</a>
+            <a href="#skills">Навыки</a>
+            <a href="#projects">Проекты</a>
+            <a href="#achievements">Достижения</a>
+            <a href="#contacts">Контакты</a>
+            <div id="theme-toggle" class="theme-toggle">
+    <span id="theme-icon">☀️</span>
+</div>
+
+
+        </nav>
+        <h1>Привет! Я Адиль</h1>
+        <p class="textMain">Программист | Веб-разработчик | Геймер</p>
+    </header>
+
+    <section id="about" class="about-container">
+        <img src="https://img.freepik.com/free-photo/3d-portrait-people_23-2150793852.jpg?t=st=1741450961~exp=1741454561~hmac=3dba7baf19c29463818b9c50221bbce7589b2ad8727d3cafb0684609e06245e1&w=740" alt="Мой аватар">
+        <div>
+            <h2>👨‍💻 Обо мне</h2>
+            <p>Меня зовут <strong>Адиль</strong>, я <b>программист</b> из Павлодара. 🎓 Учусь в <b>ПГУ им. С. Торайгырова</b> на специальности <b>6B06104-Computer Science</b>.</p>
+            <p>💡 Увлекаюсь <b>веб-разработкой</b> и <b>созданием игр</b>.</p>
+
+            <h3>🎯 Хобби:</h3>
+            <ul>
+                <li>⚽ Футбол</li>
+                <li>🏐 Волейбол</li>
+                <li>🎮 Компьютерные игры</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Навыки</h2>
+
+        <h3>🛠️ Технические навыки:</h3>
+        <ul>
+            <li>💻 HTML, CSS</li>
+            <li>⚙️ JavaScript (начальный уровень)</li>
+            <li>⚙️ C++ (начальный уровень)</li>
+            <li>🐍 Python (Telegram-боты, Aiogram)</li>
+            <li>📂 Работа с Git и GitHub</li>
+        </ul>
+
+        <blockquote>
+            "Код – это поэзия, а программист – поэт."
+        </blockquote>
+
+        <h3>🤝 Мягкие навыки:</h3>
+        <ul>
+            <li>👥 Командная работа</li>
+            <li>🧠 Креативное мышление</li>
+            <li>⏳ Тайм-менеджмент</li>
+        </ul>
+
+        <img src="https://i.gifer.com/2of.gif" alt="Описание GIF" class="giff">
+    </section>
+
+    <section id="projects">
+        <h2>Проекты</h2>
+        <ul>
+            <li>Создал Telegram-бота на Python с использованием библиотеки Aiogram, позволяющего пользователям заказывать еду через удобный интерфейс. Бот поддерживает выбор блюд, оформление заказа и отправку уведомлений администраторам. </li>
+            <div class="container">
+                <img src="chatT.jpeg" class="tg">
+                <img src="men.jpeg" class="tg">
+            </div>
+
+            <li>Создал Веб-приложение для создания заметок. Разработка на Python с использованием SQLite, HTML, CSS.</li>
+            <li>Lending Page на Figma для творческого экзамена (в процессе)</li>
+        </ul>
+    </section>
+
+    <section id="achievements">
+        <h2>Достижения</h2>
+        <ul>
+            <li>Окончил Павлодарский высший колледж управления (2024) с красным дипломом.</li>
+            <img src="krd.jpg" class="krd">
+            <li>Получил грант на обучение в ПГУ им. С. Торайгырова по специальности 6B06104-Computer Science.</li>
+            <li>Участвовал в WorldSkills Pavlodar 2022 "Веб-дизайн и разработка".</li>
+            <img src="ws.jpg" class="wrds">
+        </ul>
+    </section>
+
+    <section id="contacts">
+        <h2>📞 Контакты</h2>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:sagantaev.adil@mail.ru">sagantaev.adil@mail.ru</a></p>
+        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/sagantaev2003" target="_blank">Мой GitHub</a></p>
+        <p><i class="fab fa-telegram"></i> Telegram: @sagantaev</p>
+
+        <form action="mailto:sagantaev.adil@mail.ru" method="post" enctype="text/plain" class="contact-form">
+            <label for="name">Имя:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Адиль. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
